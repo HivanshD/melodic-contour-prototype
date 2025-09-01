@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Melodic Contour Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Melodic Contour Perception — Prototype</h1>
+    <p class="muted">Listen to Sequence A and Sequence B, then decide if they have the same up/down shape.</p>
+
+    <section class="card">
+      <div class="row">
+        <button id="btnPlayA" class="btn" disabled>▶ Play Sequence A</button>
+        <button id="btnPlayB" class="btn" disabled>▶ Play Sequence B</button>
+      </div>
+
+      <div class="row">
+        <button id="btnSame" class="choice" disabled>Same contour</button>
+        <button id="btnDiff" class="choice" disabled>Different contour</button>
+      </div>
+
+      <div class="row">
+        <button id="btnStart" class="btn primary">Start</button>
+        <button id="btnNext" class="btn" disabled>Next trial</button>
+        <button id="btnFinish" class="btn danger" disabled>Finish & Download CSV</button>
+      </div>
+
+      <p id="status" class="status">Idle.</p>
+      <p id="score" class="score"></p>
+    </section>
+
+    <footer class="muted">
+      <small>Built with plain HTML/CSS/JS + Web Audio API.</small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
